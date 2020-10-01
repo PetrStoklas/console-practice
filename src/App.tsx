@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Button, Typography } from "antd"
 import './App.css';
+import "antd/dist/antd.css";
+
 
 function App() {
+    const { Title } = Typography
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Title level={1}>my-app</Title>
+        <Title level={2}>0</Title>
+        <br />
+        <Button type="primary">Click me</Button>
     </div>
   );
 }
